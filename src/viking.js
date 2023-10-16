@@ -67,7 +67,7 @@ class War {
       this.vikingArmy[iViking].attack()
     );
     if (this.saxonArmy[iSaxon].health <= 0) {
-      this.saxonArmy.splice(this.saxonArmy[iSaxon], 1);
+      this.saxonArmy.splice(iSaxon, 1);
     }
     return attack;
   }
@@ -80,7 +80,7 @@ class War {
     );
 
     if (this.vikingArmy[iViking].health <= 0) {
-      this.vikingArmy.splice(this.vikingArmy[iViking], 1);
+      this.vikingArmy.splice(iViking, 1);
     }
 
     return attack;
